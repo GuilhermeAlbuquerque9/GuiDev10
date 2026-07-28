@@ -203,3 +203,105 @@ p a:hover{
         margin:8px auto;
     }
 }
+
+/* ====== Página de Selos ====== */
+
+.stamp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 30px auto;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+.stamp-card {
+    width: 220px;
+
+    background: #ffffff;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+
+    transition: transform .2s, box-shadow .2s;
+
+    box-sizing: border-box;
+}
+
+.stamp-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.20);
+}
+
+.stamp {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto 15px auto;
+
+    image-rendering: auto;
+}
+
+.download-btn {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background: #1976d2;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: background .2s;
+}
+
+.download-btn:hover {
+    background: #0d5db8;
+}
+
+.download-btn:active {
+    transform: scale(.98);
+}
+
+/* Responsivo */
+
+@media (max-width: 900px) {
+
+    .stamp-card {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .stamp-grid {
+        justify-content: center;
+    }
+
+    .stamp-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
